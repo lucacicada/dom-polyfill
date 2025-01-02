@@ -12690,22 +12690,11 @@
       }
     }
 
-    const parseHTML = (html, globals = null) => (new DOMParser).parseFromString(
-      html, 'text/html', globals
-    ).defaultView;
-
     function Document() {
       illegalConstructor();
     }
 
     setPrototypeOf(Document, Document$1).prototype = Document$1.prototype;
-
-    // see: https://developer.mozilla.org/en-US/docs/Web/API/Document/parseHTMLUnsafe_static
-    Object.defineProperties(Document, {
-        parseHTMLUnsafe: {
-            value: parseHTML,
-        },
-    });
 
     var __create = Object.create;
     var __defProp = Object.defineProperty;
@@ -18234,9 +18223,6 @@
     Object.defineProperties(globalThis, {
         DOMParser: {
             value: DOMParser,
-        },
-        Document: {
-            value: Document,
         },
         Headers: {
             value: Headers,

@@ -12687,22 +12687,11 @@ class DOMParser {
   }
 }
 
-const parseHTML = (html, globals = null) => (new DOMParser).parseFromString(
-  html, 'text/html', globals
-).defaultView;
-
 function Document() {
   illegalConstructor();
 }
 
 setPrototypeOf(Document, Document$1).prototype = Document$1.prototype;
-
-// see: https://developer.mozilla.org/en-US/docs/Web/API/Document/parseHTMLUnsafe_static
-Object.defineProperties(Document, {
-    parseHTMLUnsafe: {
-        value: parseHTML,
-    },
-});
 
 var __create = Object.create;
 var __defProp = Object.defineProperty;
@@ -17956,4 +17945,4 @@ function requireUrlSearchParams () {
 var urlSearchParamsExports = /*@__PURE__*/ requireUrlSearchParams();
 var index = /*@__PURE__*/getDefaultExportFromCjs(urlSearchParamsExports);
 
-export { DOMParser, Document, Headers, index$1 as URL, index as URLSearchParams };
+export { DOMParser, Headers, index$1 as URL, index as URLSearchParams };
