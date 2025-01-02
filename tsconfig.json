@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "lib": [],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": [],
+    "strict": true,
+    "esModuleInterop": false
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}
