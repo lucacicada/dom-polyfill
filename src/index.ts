@@ -1,6 +1,7 @@
 import { Document, DOMParser } from './DOM/Document'
 import { Headers } from './DOM/Headers'
-import { URL, URLSearchParams } from './DOM/URL'
+import 'core-js/actual/url'
+import 'core-js/actual/url-search-params'
 
 Object.defineProperties(globalThis, {
   DOMParser: {
@@ -8,12 +9,6 @@ Object.defineProperties(globalThis, {
   },
   Document: {
     value: Document,
-  },
-  URL: {
-    value: URL,
-  },
-  URLSearchParams: {
-    value: URLSearchParams,
   },
   Headers: {
     value: Headers,

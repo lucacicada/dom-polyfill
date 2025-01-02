@@ -55,8 +55,8 @@ const headers = new Headers()
 
 ## Implementations
 
-- **URL** - [jsdom/whatwg-url](https://github.com/jsdom/whatwg-url)
-- **URLSearchParams** - [jsdom/whatwg-url](https://github.com/jsdom/whatwg-url)
+- **URL** - [zloirock/core-js](https://github.com/zloirock/core-js)
+- **URLSearchParams** - [zloirock/core-js](https://github.com/zloirock/core-js)
 - **Headers** - [mswjs/headers-polyfill](https://github.com/mswjs/headers-polyfill)
 - **DOMParser** - [WebReflection/linkedom](https://github.com/WebReflection/linkedom)
 
